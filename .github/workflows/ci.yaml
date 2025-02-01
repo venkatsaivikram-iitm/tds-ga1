@@ -8,6 +8,13 @@ on:
 
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
       - name: 23f2003916@ds.study.iitm.ac.in
         run: echo "Hello, world!"
+
+      - name: Completed
+        run: echo "GitHub Action Completed!"
